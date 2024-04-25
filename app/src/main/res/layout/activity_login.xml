@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_background_color"
+    tools:context=".activities.LoginActivity">
+
+
+    <Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/exit_from_app"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="@string/close_app"
+            android:textAlignment="textEnd"
+            android:textColor="@color/close_color"
+            android:textFontWeight="400"
+            android:textSize="16sp" />
+
+    </Toolbar>
+
+
+    <TextView
+        android:id="@+id/number_phone_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:text="@string/number_phone"
+        android:textColor="@color/black_color_for_text"
+        android:textFontWeight="700"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <TextView
+        android:id="@+id/sms_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/input_number_for_sms"
+        android:textColor="@color/sms_text_color"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/number_phone_text"
+        app:layout_constraintStart_toStartOf="@+id/number_phone_text"
+        app:layout_constraintTop_toBottomOf="@+id/number_phone_text" />
+
+
+    <EditText
+        android:id="@+id/number_phone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:hint="@string/enter_phone_number"
+        android:textColorHint="#38000000"
+        android:textSize="16sp"
+        android:maxLength="9"
+        android:textFontWeight="400"
+        android:textColor="@color/black"
+        android:inputType="phone"
+        android:background="@drawable/background_for_edittext"
+        app:layout_constraintEnd_toEndOf="@+id/sms_text"
+        app:layout_constraintStart_toStartOf="@+id/sms_text"
+        app:layout_constraintTop_toBottomOf="@+id/sms_text" />
+
+    <CheckBox
+        android:id="@+id/check_is_agree"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="60dp"
+        android:theme="@style/MyCheckBox"
+        app:layout_constraintStart_toStartOf="@+id/number_phone"
+        app:layout_constraintTop_toBottomOf="@+id/number_phone"
+        />
+
+    <TextView
+        android:id="@+id/is_agree_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:textFontWeight="400"
+        android:textSize="14sp"
+        android:layout_marginEnd="46dp"
+        android:text="@string/is_agree_text"
+        app:layout_constraintBottom_toBottomOf="@+id/check_is_agree"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/check_is_agree"
+        app:layout_constraintTop_toTopOf="@+id/check_is_agree" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/next_page"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/background_for_textview_2"
+        android:textSize="16sp"
+        android:text="@string/continue_text"
+        android:enabled="false"
+        android:textAlignment="center"
+        android:textColor="@color/black_color_for_text"
+        app:layout_constraintEnd_toEndOf="@+id/number_phone"
+        app:layout_constraintStart_toStartOf="@+id/check_is_agree"
+        app:layout_constraintTop_toBottomOf="@id/is_agree_text" />
+
+    
+</androidx.constraintlayout.widget.ConstraintLayout>

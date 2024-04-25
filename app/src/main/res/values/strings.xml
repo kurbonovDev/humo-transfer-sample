@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">humo-transfer-sample</string>
+    <string name="close_app">Закрыть</string>
+    <string name="number_phone">Номер телефона</string>
+    <string name="input_number_for_sms">Укажите номер вашего телефона, мы пришлем СМС для входа в приложение</string>
+    <string name="enter_phone_number">Введите номер телефона</string>
+    <string name="is_agree_text"><font color="#60000000">Настоящим, я соглашаюсь и принимаю условия описанные в</font>
+        <u><font color="#424242">Лицензионном соглашении, Публичной оферте и Политике конфиденциальности</font>
+        </u>
+    </string>
+    <string name="perevod_text">Переводы зарубеж</string>
+    <string name="continue_text">Продолжить</string>
+    <string name="main_screen_text">Главная</string>
+    <string name="main_screen_perevod_text">Отправляйте денежные переводы зарубеж</string>
+    <string name="update_desc">Получите новые возможности для денежных переводов!</string>
+    <string name="send_transcation">Отправить перевод</string>
+    <string name="update_title">Доступно обновление</string>
+    <string name="popular_country_text">Популярные страны</string>
+    <string name="example_card_number">4444 44444 4444 4444</string>
+</resources>

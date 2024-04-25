@@ -24,7 +24,7 @@ class TransferActivity : AppCompatActivity() {
         val intent = intent
         val nameCountry = intent.getStringExtra("name_country")
         val initialCountry = intent.getStringExtra("initial_country")
-        val courseCountry = intent.getStringExtra("course_country")?.toDoubleOrNull() ?: 0.0
+        val courseCountry = intent.getStringExtra("course_country")
 
         binding.txtPerevod.text = "Перевод в $nameCountry"
         binding.course.text = "1 TJS = $courseCountry $initialCountry"

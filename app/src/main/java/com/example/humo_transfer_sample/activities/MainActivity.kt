@@ -21,9 +21,9 @@ class MainActivity : AppCompatActivity() {
     private lateinit var adapter: CountryAdapter
     private lateinit var sharedPreferences: SharedPreferences
     private var popularCountryList = listOf<CountryItem>(
-        CountryItem("Таджикистан", R.drawable.tj,1.0,"Таджикистан","TJS"),
-        CountryItem("Россия", R.drawable.ru,0.1172,"Россию","RUB"),
-        CountryItem("Узбекистан", R.drawable.uzb,0.0009,"Узбекистан","UZS")
+        CountryItem("Таджикистан", R.drawable.tj,"1.0","Таджикистан","TJS"),
+        CountryItem("Россия", R.drawable.ru,"0.1172","Россию","RUB"),
+        CountryItem("Узбекистан", R.drawable.uzb,"0.0009","Узбекистан","UZS")
     )
 
     override fun onCreate(savedInstanceState: Bundle?) {

@@ -21,13 +21,13 @@ class ChooseCountryActivity : AppCompatActivity() {
     private lateinit var adapter: CountryAdapter
 
     private var countries = listOf<CountryItem>(
-        CountryItem("Таджикистан", R.drawable.tj,1.0,"Таджикистан","TJS"),
-        CountryItem("Россия", R.drawable.ru,0.1172,"Россию","RUB"),
-        CountryItem("Узбекистан", R.drawable.uzb,0.0009,"Узбекистан","UZB"),
-        CountryItem("Казахстан",R.drawable.kz,0.0245,"Казахстан","KZT"),
-        CountryItem("ОАЭ",R.drawable.arab,0.34,"ОАЭ","AED"),
-        CountryItem("Корея",R.drawable.korea,125.99,"Корею","KRW"),
-        CountryItem("Украина",R.drawable.ukraine,3.6393,"Украину","UAH"),
+        CountryItem("Таджикистан", R.drawable.tj,"1.0","Таджикистан","TJS"),
+        CountryItem("Россия", R.drawable.ru,"0.1172","Россию","RUB"),
+        CountryItem("Узбекистан", R.drawable.uzb,"0.0009","Узбекистан","UZB"),
+        CountryItem("Казахстан",R.drawable.kz,"0.0245","Казахстан","KZT"),
+        CountryItem("ОАЭ",R.drawable.arab,"0.34","ОАЭ","AED"),
+        CountryItem("Корея",R.drawable.korea,"125.99","Корею","KRW"),
+        CountryItem("Украина",R.drawable.ukraine,"3.6393","Украину","UAH"),
 
         )
 
